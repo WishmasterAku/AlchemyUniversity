@@ -34,3 +34,45 @@ function scream(n) {
     }
     return str;
 }
+
+// Find the Sum is Even or Odd
+const num = 10;
+remainder = num % 2;
+isEven = remainder === 0;
+console.log(isEven);
+
+// Find number of Evens 
+
+// let count = 0;
+// for (let i = 1; i<= 50; i++) {
+//     const remainder = i % 2;
+//     const isEven = remainder === 0;
+//     if (isEven){
+//         count++;
+//     }
+// }
+// console.log(count);
+
+let count = 0;
+for (let i = 1; i <= count; i++) {
+    const remainder = i % 2;
+    const isEven = remainder === 0;
+}
+
+function scream(n) 
+{
+    let str = "";
+    for (let i = 1; i <= n; i++) 
+    {
+      const remainder = i % 2;
+      const isEven = remainder === 0;
+      if(isEven) {
+        str += "a";  
+      }
+      else {
+        str += "A";
+      }
+    }  
+    return str;
+}
+console.log(scream(10));
