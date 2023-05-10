@@ -78,15 +78,44 @@
 // console.log(scream(10));
 
 // Tap Double Console log the last value
-function topDouble(value, top) {
-    let result = value;
-    let lastValue = result;
-  
-    while (result <= top) {
-      lastValue = result;
-      result *= 2;
+// function topDouble(value, top) {
+//     let lastValue;
+//     while (value <= top) {
+//       lastValue = value;
+//       value *= 2;
+//     }
+//     console.log(lastValue);
+//   }
+//   topDouble(2, 100);
+
+// function isEven(num){
+//     const remainder = num % 2;
+//     const isEven = remainder === 0;
+//     if (isEven){
+//         return true;
+//     }
+//     else {
+//         return false;
+//     }
+// }
+
+// function maxSum(num) 
+// {
+//   let result = 0;
+//   for (let i = 1; i <= num; i++) {
+//     result += i;
+//     }
+//   return result;
+// }
+// console.log(maxSum(10));
+
+function startsWithX(string) {
+    str = string
+    if (str[0] === "x") {
+        return true;
     }
-  
-    console.log(lastValue);
-  }
-  topDouble(2, 100);
+    else {
+        return false;
+    }
+}
+console.log(startsWithX("x-ray"));
