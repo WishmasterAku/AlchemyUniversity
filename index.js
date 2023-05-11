@@ -141,3 +141,15 @@ function endsWithX(string)
 
 
 console.log(endsWithX("FactorX"));
+
+
+const string = "Hello";
+for(let i = 0; i < string.length; i++) {
+    console.log(string[i]);
+}
+if (string.length === "X" || string.length === "x") {
+    return true;
+}
+else {
+    return false;
+}
