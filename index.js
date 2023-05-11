@@ -119,3 +119,25 @@ function startsWithX(string) {
     }
 }
 console.log(startsWithX("x-ray"));
+
+function endsWithX(string) 
+{
+    str = string;
+    if (str[str.length -1 ] === "x" )
+    {
+      return true;
+    }
+      
+    else if (str[str.length -1 ] === "X") 
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
+
+
+
+console.log(endsWithX("FactorX"));
