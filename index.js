@@ -147,9 +147,31 @@ const string = "Hello";
 for(let i = 0; i < string.length; i++) {
     console.log(string[i]);
 }
-if (string.length === "X" || string.length === "x") {
+if (string[i].length === "x" || string[i] === "X") {
     return true;
-}
+}   
 else {
     return false;
 }
+
+
+function isAllX(string) 
+{
+    for(let i = 0; i < string.length; i++)
+    {
+        if(string[i] !== "x" && string[i] !== "X")
+        {
+            return false;
+        }
+        
+    }
+    return true;
+}
+
+function findFirstX(string) {
+
+    return string.indexOf('x');
+        
+}
+
+    
