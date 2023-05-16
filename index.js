@@ -217,5 +217,52 @@ for (let i = 0; i < averageTestScores.length; i++)
   const avg = total / averageTestScores.length;
 console.log("The Average Score is " + avg);
 
+function stringWord(string){
+    for(let i = 0; i < string.length; i++)
+      console.log(string[i]);
+  }
+  
+  stringWord("Hello World");
+
+  function hasOne(array) {
+    for(let i = 0; i < array.length; i++)
+    {
+        
+        if(array[i] === 1)
+        {
+            return true;
+        }        
+    }
+    return false;
+}
+
+
+function sumEven(array) {
+    let total = 0;
+    for(let i = 0; i < array.length; i++)
+    {   
+        let even = array[i] % 2;
+        let isEven = even === 0;
+        if(array[i] === isEven)
+        {
+            total += array[i];
+        }
+        return total;
+    }    
+}
+
+function sumEven(array) 
+{
+    let total = 0;   
+    for(let i = 0; i < array.length; i++)
+    {        
+        let even = array[i] % 2;
+        let isEven = even === 0;
+        if(isEven)
+        {
+            total += array[i];            
+        }        
+    }   return total;   
+}
 
 
