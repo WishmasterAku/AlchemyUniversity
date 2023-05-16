@@ -205,3 +205,17 @@ function splitAtX(string) {
 }
 
 
+// Arrays
+
+const averageTestScores = [76, 89, 95, 74, 59];
+let total = 0;
+for (let i = 0; i < averageTestScores.length; i++)
+  {
+  total += averageTestScores[i];
+  }
+
+  const avg = total / averageTestScores.length;
+console.log("The Average Score is " + avg);
+
+
+
