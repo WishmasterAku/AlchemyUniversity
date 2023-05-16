@@ -265,4 +265,75 @@ function sumEven(array)
     }   return total;   
 }
 
+function unique(array) {
+    const newArray = [];
+    for(let i = 0; i < array.length; i++)
+    {
+        const element = array[i];
+        if(!newArray.includes(element)) {
+            newArray.push(element);
+        }
+    }
+    return newArray;
+}
 
+function uniqueTwo(array) 
+{   
+    const newArray = [];
+    for(let i = 0; i < array.length; i++)
+    {
+        const element = array[i];
+        const isUnique = array.indexOf(element) >= 0;
+        if(isUnique)
+        {
+            newArray.push(element);
+        }
+    }
+    return newArray;   
+}
+
+function uniqueTwo(array) {   
+    const newArray = [];
+    
+    for (let i = 0; i < array.length; i++) {
+      const element = array[i];
+      const isUnique = newArray.indexOf(element) === -1;
+      
+      if (isUnique) {
+        newArray.push(element);
+      }
+    }
+    
+    return newArray;   
+  }
+  
+  const originalArray = [2, 4, 5, 2, 5, 6, 7];
+  const uniqueArray = uniqueTwo(originalArray);
+  
+  console.log(uniqueArray);
+
+
+  function addOne(array) {
+    for (let i = 0; i < array.length; i++)
+    {
+        array[i] += 1;
+    }
+}
+
+function removeOccurrences(array, num) {
+    for(let i = array.length - 1; i >= 0; i--)
+    {
+        if(array[i] === num) {
+            array.splice(i, 1);
+        }
+    }
+}
+
+
+// Objects
+
+const order = {
+    pizzas: 1,
+    extraCheese: true,
+    deliveryInstructions: "Front Door",
+};
