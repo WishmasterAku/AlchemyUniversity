@@ -174,4 +174,34 @@ function findFirstX(string) {
         
 }
 
-    
+// function splitAtX(string) {
+//     let firstHalf = string.slice(0, string.indexOf('x'));
+//     let secondHalf = string.slice(string.indexOf('x') + 1);  
+//     firstCount = firstHalf.length;
+//     secondCount = secondHalf.length;
+//     if (firstCount === secondCount) {
+//         console.log("Equal");
+//     }
+//     else if (firstCount > secondCount) {
+//         console.log("First Half is Greater");
+//     }
+//     else {
+//         console.log("Second Half is Greater");
+//     }
+//     }
+// splitAtX("HelloxWorld");
+// console.log(firstHalf + secondHalf);
+
+function splitAtX(string) {
+    let firstHalf = string.slice(0, string.indexOf('x'));
+    let secondHalf = string.slice(string.indexOf('x') + 1);
+    if (firstHalf.length > secondHalf.length)
+    {
+        return firstHalf;
+    }
+    else{
+        return secondHalf;
+    }
+}
+
+
