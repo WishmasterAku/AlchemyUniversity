@@ -337,3 +337,39 @@ const order = {
     extraCheese: true,
     deliveryInstructions: "Front Door",
 };
+
+// Number of Pizzas
+function numberOfPizzas(orders) {
+    pizzaOrders = 0;
+    for(let i = 0; i < orders.length; i++)
+    {
+        pizzaOrders += orders[i].pizzas;
+    }
+    return pizzaOrders;
+}
+
+const orders = [
+    { pizzas: 3 },
+    { pizzas: 5 },
+    { pizzas: 10 }
+];
+
+const totalPizzas = numberOfPizzas(orders);
+console.log( totalPizzas ); // 18
+
+
+const ORDER_TYPES = require('./orderTypes');
+
+function numberOfPizzas(orders) {
+    let pizzaOrders = 0;
+    for(let i = 0; i < orders.length; i++)
+    {
+        if(order[i].type === ORDER_TYPES.PIZZA)
+        {
+            pizzaOrders += orders[i].pizzas;        
+        }
+        
+    }
+    return pizzaOrders;
+}
+
