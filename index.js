@@ -358,13 +358,14 @@ const totalPizzas = numberOfPizzas(orders);
 console.log( totalPizzas ); // 18
 
 
+// Order by type
 const ORDER_TYPES = require('./orderTypes');
 
 function numberOfPizzas(orders) {
     let pizzaOrders = 0;
     for(let i = 0; i < orders.length; i++)
     {
-        if(order[i].type === ORDER_TYPES.PIZZA)
+        if(orders[i].type === ORDER_TYPES.PIZZA)
         {
             pizzaOrders += orders[i].pizzas;        
         }
@@ -372,4 +373,10 @@ function numberOfPizzas(orders) {
     }
     return pizzaOrders;
 }
+
+const ORDER_TYPES = {
+    PIZZA: 0,
+    WING: 1,
+    PASTA: 2,
+ }
 
