@@ -380,3 +380,35 @@ const ORDER_TYPES = {
     PASTA: 2,
  }
 
+function splitAtY(string)
+{
+    let firstHalf = string.slice(0, string.indexOf('y'));
+    let secondHalf = string.slice(string.indexOf('y') +1);
+    console.log(firstHalf + " " + secondHalf);
+}
+
+console.log(splitAtY("HelloyWorld"));
+
+const groceryList = {
+    apples: 5,
+    bananas: 3,
+    milk: 7,
+    avocados: 4,
+}
+
+function addToShoppingCart(groceryList, item, quantity) {
+    groceryList[item] = quantity;//adds item to groceryList
+}
+
+function removeFromShoppingCart(groceryList, item) {
+    if (groceryList.hasOwnProperty(item)) {
+        delete groceryList[item]; // removes item from groceryList
+    }   
+}
+
+const groceryList = {};//creates groceryList
+groceryList.apples = 5; //adds apples to groceryList
+groceryList.cookies = 10; //adds cookies to groceryList
+console.log(groceryList); // displays groceryList
+removeFromShoppingCart(groceryList, "cookies"); //removes cookies from groceryList
+console.log(groceryList); 
