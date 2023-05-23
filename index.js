@@ -421,3 +421,9 @@ for (let key in cars)
 console.log(Object.keys(cars)); // [ 'a', 'b', 'c', 'd' ]
 console.log(Object.values(cars)); // [ 'Honda', 'Toyota', 'Acura', 'Nissan' ]
 console.log(Object.keys(cars).length); // 4
+
+
+objectSecret = {secret: "Pass123"} // creates objectSecret
+function removeSecret(objectSecret) {
+    delete objectSecret.secret; // removes secret from objectSecret
+}
