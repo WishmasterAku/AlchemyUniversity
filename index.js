@@ -380,21 +380,21 @@ const ORDER_TYPES = {
     PASTA: 2,
  }
 
-function splitAtY(string)
-{
-    let firstHalf = string.slice(0, string.indexOf('y'));
-    let secondHalf = string.slice(string.indexOf('y') +1);
-    console.log(firstHalf + " " + secondHalf);
-}
+// function splitAtY(string)
+// {
+//     let firstHalf = string.slice(0, string.indexOf('y'));
+//     let secondHalf = string.slice(string.indexOf('y') +1);
+//     console.log(firstHalf + " " + secondHalf);
+// }
 
-console.log(splitAtY("HelloyWorld"));
+// console.log(splitAtY("HelloyWorld"));
 
-const groceryList = {
-    apples: 5,
-    bananas: 3,
-    milk: 7,
-    avocados: 4,
-}
+// const groceryList = {
+//     apples: 5,
+//     bananas: 3,
+//     milk: 7,
+//     avocados: 4,
+// }
 
 function addToShoppingCart(groceryList, item, quantity) {
     groceryList[item] = quantity;//adds item to groceryList
@@ -412,3 +412,12 @@ groceryList.cookies = 10; //adds cookies to groceryList
 console.log(groceryList); // displays groceryList
 removeFromShoppingCart(groceryList, "cookies"); //removes cookies from groceryList
 console.log(groceryList); 
+
+const cars = { a: "Honda", b: "Toyota", c: "Acura", d: "Nissan" }
+for (let key in cars) 
+  {
+    console.log(key);
+  }
+console.log(Object.keys(cars)); // [ 'a', 'b', 'c', 'd' ]
+console.log(Object.values(cars)); // [ 'Honda', 'Toyota', 'Acura', 'Nissan' ]
+console.log(Object.keys(cars).length); // 4
