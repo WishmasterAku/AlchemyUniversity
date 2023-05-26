@@ -428,4 +428,18 @@ function removeSecret(objectSecret) {
     delete objectSecret.secret; // removes secret from objectSecret
 }
 
-// Testing 
+function halfValue(numbers) 
+{
+    numbers = [2,4,6,8];
+    for(let i = 0; i < numbers.length; i++)
+    {              
+      numbers.push(Math.ceil(numbers[i] / 2));
+      console.log(numbers[i]);
+        
+    }
+
+    return newNumbers;
+  
+}
+
+halfValue = [2,4,6,8];
