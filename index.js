@@ -1,18 +1,3 @@
-// function factorial(n) {
-//     let result = 1;
-//     for (let i = 1; i <= n; i++) {
-//         result *= i;
-//     }
-//     return result;
-// }
-
-// function scream(n) {
-//     let str = "";
-//     for (let i = 1; i <= n; i++) {
-//         str += "a";
-//     }
-//     return str;
-// }
 
 // Find the Sum is Even or Odd
 // const num = 10;
