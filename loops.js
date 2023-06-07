@@ -79,3 +79,15 @@ function numberOfScreams(a)
     return scream;
 }
 numberOfScreams(10); // AAAAAAAAAA
+
+
+// Tap Double Console log the last value
+function topDouble(value, top) { 
+    let lastValue;
+    while (value <= top) { // While the value is less than or equal to the top
+      lastValue = value; // Store the last value
+      value *= 2; // Double the value
+    }
+    console.log(lastValue);
+  }
+  topDouble(2, 100); // 64
